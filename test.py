@@ -1,14 +1,13 @@
-num1 = float(input("Введіть перше число: "))
-num2 = float(input("Введіть друге число: "))
-sa = (num1+num2)/2 #sa - середнє арифметичне
-operation = (input("Введіть операцію: "))
-if operation == "+" :
-    print(f'{num1} + {num2} = {num1 + num2}')
-elif operation == "-" :
-    print(f'{num1} - {num2} = {num1 - num2}')
-elif operation == "*" :
-    print(f'{num1} * {num2} = {num1 * num2}')
-elif operation == 'sa': 
-    print(sa)
+grade = float(input("Введіть оцінку(1, 2, 3, 4, 5): "))
+if grade == 5:
+    print("Відмінно")
+elif grade == 4:
+    print("Добре")
+elif grade == 3:
+    print("Задовільно")
+elif grade == 2:
+    print("Погано")
+elif grade == 1:
+    print("Дуже погано")
 else:
-    print('Некоректна операція')
+    print("Помилка")

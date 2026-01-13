@@ -1,11 +1,11 @@
 #1
-num1 = float (input("Enter first number"))
+num1 = float(input("Enter first number"))
 num2 = float(input("Enter second number"))
 num3 = float(input("Enter third number"))
 print (f"num1 + num2 + num3 = {num1 + num2 + num3}")
 print (f"num1 * num2 * num3 = {num1 * num2 * num3}")
 #2
-d1 = float (input("Введіть довжину першої діагоналі"))
+d1 = float(input("Введіть довжину першої діагоналі"))
 d2 = float(input("Введіть довжину другої діагоналі"))
 print (f"(d1 * d2)/2 = {(d1 * d2)/2}")
 #3 
