@@ -1,32 +1,20 @@
-num1 = int(input('Vvedit pershe chyslo:'))
-num2 = int(input('Vvedit druge chyslo:'))
-if num1 < num2:
-    diapazon = num1
-    if diapazon % 2 == 0:
-        print(diapazon)
-    while diapazon != num2:
-        diapazon += 1
-        if diapazon % 2 == 0:
-            print(diapazon)
-    diapazon = num2
-    if diapazon % 2 != 0:
-        print(diapazon)
-    while diapazon != num1:
-        diapazon -= 1
-        if diapazon % 2 != 0:
-            print(diapazon)
-if num1 > num2:
-    diapazon = num2
-    if diapazon % 2 == 0:
-        print(diapazon)
-    while diapazon != num1:
-        diapazon += 1
-        if diapazon % 2 == 0:
-            print(diapazon)
-    diapazon = num1
-    if diapazon % 2 != 0:
-        print(diapazon)
-    while diapazon != num2:
-        diapazon -= 1
-        if diapazon % 2 != 0:
-            print(diapazon)
+A = int(input("Vvedit chyslo: "))
+N = int(input("Vvedit stupin: "))
+A2 = A
+if N == 0:
+    A2 = 1
+    print(A2)
+elif N > 0:
+    stupin = 1
+    while stupin != N:
+        stupin += 1
+        A2 *= A 
+    print (A2)
+elif N < 0 and A != 0:
+    stupin = 1
+    while stupin != -N:
+        stupin += 1
+        A2 *= A 
+    print (1/A2)
+elif N < 0 and A == 0:
+    print("error")
