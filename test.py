@@ -1,20 +1,12 @@
-A = int(input("Vvedit chyslo: "))
-N = int(input("Vvedit stupin: "))
-A2 = A
-if N == 0:
-    A2 = 1
-    print(A2)
-elif N > 0:
-    stupin = 1
-    while stupin != N:
-        stupin += 1
-        A2 *= A 
-    print (A2)
-elif N < 0 and A != 0:
-    stupin = 1
-    while stupin != -N:
-        stupin += 1
-        A2 *= A 
-    print (1/A2)
-elif N < 0 and A == 0:
-    print("error")
+figura = input("Oberit figuru(kvadrat abo praymokutnyk): ")
+symvol = input("Oberit symvol: ")
+if figura == 'kv':
+    storona = int(input("Vvedit dovzhynu storony: "))
+    for i in range(storona):
+        print(symvol * storona)
+elif figura == 'pr':
+    shyryna = int(input("Vvedit shyrynu: "))
+    vysota = int(input("Vvedit vysoty: "))
+    for i in range(vysota):
+       print(symvol * shyryna)
+        
