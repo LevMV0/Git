@@ -23,7 +23,7 @@ peeled_potatoes = 0
 while peeled_potatoes < needed_potatoes:
     print("Beremo kartoplu")
     is_rotten = input('Kartoplya gnyla?')
-    if rotten == 'tak':
+    if is_rotten == 'tak':
         print('Vykydaemo')
         continue
     print(f"Chystymo kartoplu... Pochystyly {peeled_potatoes} kartopli!")
