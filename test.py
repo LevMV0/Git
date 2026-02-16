@@ -1,8 +1,8 @@
-text = input("Vvedit text: ")
-slovo1 = "привіт" 
-slovo2 = "пока" 
-slovo3 = "світ"
-text1 = text.replace(slovo1,slovo1.upper())
-text2 = text1.replace(slovo2, slovo2.upper())
-text3 = text2.replace(slovo3, slovo3.upper())
-print(text3)
+colection = input('Vvedit elementy spysku zilyh chysel: ')
+unique = []
+numbers = colection.split(', ')
+numbers = [int(x) for x in numbers]
+for number in numbers:
+    if number not in unique:
+        unique.append(number)
+print(unique)
