@@ -1,5 +1,6 @@
-numbers_input = input("Vvedit spysok chysel: ")
-n = int(input("Vvedit kilkist pozytsii N: "))
-numbers = [int(x) for x in numbers_input.split(', ')]
-shifted = numbers[-n:] + numbers[:-n]
-print(shifted)
+word1 = input('Vvedit pershe slovo: ').lower()
+word2 = input('Vvedit druge slovo: ').lower()
+if set(word1) == set(word2):
+    print('Slova mayut odnakovi mnozhyny bukv')
+else:
+    print('Slova ne mayut odnakovi mnozhyny bukv')
