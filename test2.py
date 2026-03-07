@@ -1,2 +1,6 @@
-my_games = set(input("Vvedit svoi igry (cherez probil): ").lower().split(', '))
-               
+def palindrome(num):
+    num_str = str(num)
+    return num_str == num_str[::-1]
+num = int(input("Vvedit chyslo: "))
+if palindrome(num) == True:
+    print(num)

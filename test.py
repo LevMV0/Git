@@ -1,12 +1,13 @@
-kilkist = int(input('Vvedit kilkist druziv: '))
-my_games = set(input('Vvedit vashui igry: ').lower().split(', '))
-count = 0
-druzi = []
-for count in range(kilkist):
-    drug = input('Vvedit im\'ya druga: ')
-    if drug not in druzi:
-        druzi.append(drug)
-    fr_games = set(input('Vvedit igry druga: ').lower().split(', '))
-    spilni_igry = my_games & fr_games
-print('Vy mozhete pograty razom u:', spilni_igry)
-
+def happy(num):
+    if num < 100000 or num > 999999:
+        return False
+    a = num // 100000 % 10
+    b = num // 10000 % 10
+    c = num // 1000 % 10
+    d = num // 100 % 10
+    e = num // 10 % 10
+    f = num % 10
+    return a * + b + c == d + e + f
+num = int(input("Vvedit 6-znachne chyslo: "))
+if happy(num) == True:
+    print(num)
